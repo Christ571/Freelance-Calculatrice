@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Money</title>
+    <link rel="stylesheet" href="FreelanceMoney.css">
+</head>
+<body>
+<header>
+    <H1>Ma Calculatrice Freelance</H1>
+</header>
+
+<form class ="formCalcul shadow" id="formCalculGain">
+    <Div class="sectionCalcul pricing">
+        <fieldset class="form-container">
+            <legend>Tarifs</legend>
+            <div class="form-field">
+                <label>TH</label>
+                <input class="form-control" name="TH" type="number" placeholder="Ex: 100"/>
+            </div>
+            <div class="form-field">
+                <label>TJM</label>
+                <input class="form-control" name="TJM" type="number" placeholder="Ex: 100"/>
+            </div>
+            <div class="form-field">
+                <label>Extras</label>
+                <input class="form-control" name="extras" type="number" placeholder="Ex: 150"/>
+            </div>
+        </fieldset>
+    </Div>
+    
+    <Div class="sectionCalcul qty" id="formCalculGain">
+        <fieldset class="form-container">
+            <legend>Quantités</legend>
+            <div class="form-field">
+                <label>TH</label>
+                <input class="form-control" name="QtyTH" type="number" placeholder="Ex: 10"/>
+            </div>
+            <div class="form-field">
+                <label>TJM</label>
+                <input class="form-control" name="QtyTJM" type="number" placeholder="Ex: 10"/>
+            </div>
+            <div class="form-field">
+                <label>Extras</label>
+                <input class="form-control" name="Qtyextras" type="number" placeholder="Ex: 10"/>
+            </div>
+        </fieldset>
+    </Div>
+    
+    <Div class="sectionCalcul fees" id="formCalculGain">
+        <fieldset class="form-container">
+            <legend>Charges</legend>
+            <div class="form-field">
+                <label>Charges</label>
+                <input class="form-control" name="Fees" type="number" placeholder="Ex: 300"/>
+            </div>
+        </fieldset>
+    </Div>
+    
+    <Div class="sectionCalcul validation">
+
+        <div>
+            <button id="buttonValidation" type="button" class="btn btn primary">Calculer</button>
+        </div>
+    
+    </Div>
+    
+    <Div class="sectionCalcul Result">
+       <div class="form-container">
+        <div class="ResultatDivResultatBrut">
+            <p>Brut</p>
+            <span id="ResultBrut">0€</span>
+        </div>
+        <div class="ResultatDiv ResultatCharges">
+            <p>Charges</p>
+            <span id="ResultCharges">0€</span>
+        </div>
+        <div class="ResultatDiv ResultatNet">
+            <p>Net</p>
+            <span id="ResultNet">0€</span>
+        </div>
+       </div> 
+    </Div>
+
+    <div>
+
+    </div>
+</form>
+
+
+<script src="FreelanceMoney.js"></script>
+</body>
+</html>
